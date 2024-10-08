@@ -1,0 +1,60 @@
+MY GENERAL PUBLIC LICENSE
+Version 3, 08 October 2024
+Copyright (C) [2024] [Rimmy Uddin]
+This program comes with ABSOLUTELY NO WARRANTY; for details see the
+MY General Public License (GPL). You may redistribute it and/or
+modify it under the terms of the MY General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+TERMS AND CONDITIONS
+0. Definitions.
+This License refers to the MY General Public License, version 3, or any later version. The "Program" refers to the software that is being licensed. The term "modify" means to alter, add, or remove parts of the software. The term "distribute" means to share the software with others.
+
+1. You may copy, modify, and distribute the Program
+You are free to use, copy, modify, merge, publish, distribute, sublicense, or sell copies of the Program, and to permit others to whom the Program is provided to do so. However, you must meet the following conditions:
+
+You must release the source code when you distribute the Program, either by including it with the distribution, or by providing a written offer to supply the source code.
+You must keep the same licensing terms, so that any copies or derivative works you distribute will also be licensed under the GPL v3.
+If you modify the Program and distribute it, you must clearly indicate the changes you made, and you must license your modifications under the GPL v3 as well.
+2. Copyleft.
+If you distribute copies or modified versions of the Program, the recipients automatically receive the same freedoms you received under this license. You must make sure that any modified version is also licensed under the GPL v3 and not under any proprietary license.
+
+3. No Warranty.
+This program is licensed as-is. There is no warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability or fitness for a particular purpose. See the MY General Public License for more details.
+
+4. Accepting the License.
+By using, copying, modifying, or distributing the Program, you accept the terms and conditions of this license.
+
+
+
+Project structure:
+
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── example/
+│   │               └── twoSum/
+│   │                   ├── Solution.java          # Main logic to solve the Two-Sum problem
+│   │                   └── NoValidPairFoundException.java  # Custom exception
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── example/
+│                   └── twoSum/
+│                       └── SolutionTest.java     # JUnit test cases for the Two-Sum problem
+├── target/                # Maven target folder (generated after build)
+├── .gitignore             # Git ignore file
+├── LICENSE                # License file (optional, can be MIT, Apache, etc.)
+├── pom.xml                # Maven build file (contains dependencies, plugins, etc.)
+└── README.md              # Project documentation
+
+Explanation:
+src/main/java/com/example/twoSum/Solution.java: Contains the main logic for solving the Two-Sum problem.
+src/main/java/com/example/twoSum/NoValidPairFoundException.java: A custom exception for handling cases where no valid sum pair is found.
+src/test/java/com/example/twoSum/SolutionTest.java: Contains the JUnit test cases that verify the solution works correctly for various scenarios.
+target/: Maven build output folder that contains compiled classes and other build artifacts (this is generated automatically by Maven).
+.gitignore: This file is used to ignore specific files and folders (such as target/ and .m2/) from being committed to Git.
+LICENSE: The project’s license file (optional, but useful for open-source projects).
+pom.xml: The Maven project object model file that defines the project, its dependencies, build configuration, etc.
+README.md: Provides information about the project, how to use it, and its structure.
